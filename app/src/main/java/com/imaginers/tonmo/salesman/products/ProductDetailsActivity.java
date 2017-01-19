@@ -36,7 +36,7 @@ public class ProductDetailsActivity extends AppCompatActivity  {
 
         //mAmount.setText(productInformations.get(position).get);
         //img.setImageResource(productInformations.get(position).getImages());
-        //mProductName.setText(productInformations.get(position).getProductName());
+        mProductName.setText(productInformations.get(position).getProductName());
 
     }
 
