@@ -42,4 +42,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, SalesActivity.class);
         startActivity(myIntent);
     }
+
+    public void logoutClick(View view) {
+        Intent myIntent = new Intent(this, MainActivity.class);
+        startActivity(myIntent);
+    }
 }
