@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imaginers.tonmo.salesman">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".HomeActivity" />
+            <activity android:name=".customer.CustomerActivity" />
+            <activity android:name=".customer.CustomerDetailsActivity" />
+            <activity android:name=".products.ProductsActivity" />
+            <activity android:name=".sales.SalesActivity" />
+        <activity android:name=".statistics.StatisticsActivity"></activity>
+    </application>
+
+</manifest>
