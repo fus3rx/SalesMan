@@ -18,11 +18,12 @@
         </activity>
         <activity android:name=".login.SignupActivity" />
         <activity android:name=".login.HomeActivity" />
-            <activity android:name=".customer.CustomerActivity" />
-            <activity android:name=".customer.CustomerDetailsActivity" />
-            <activity android:name=".products.ProductsActivity" />
-            <activity android:name=".sales.SalesActivity" />
-        <activity android:name=".statistics.StatisticsActivity"></activity>
+        <activity android:name=".customer.CustomerActivity" />
+        <activity android:name=".customer.CustomerDetailsActivity" />
+        <activity android:name=".products.ProductsActivity" />
+        <activity android:name=".sales.SalesActivity" />
+        <activity android:name=".statistics.StatisticsActivity" />
+        <activity android:name=".products.ProductDetailsActivity"></activity>
     </application>
 
 </manifest>

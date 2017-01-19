@@ -14,10 +14,16 @@
     style="@style/AppTheme.NoActionBar"
     tools:context="com.imaginers.tonmo.salesman.login.MainActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
     <com.github.florent37.materialtextfield.MaterialTextField
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         app:mtf_animationDuration="300"
         app:mtf_cardCollapsedHeight="4dp"
         app:mtf_image="@drawable/mail"

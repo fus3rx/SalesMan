@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/page"
     android:orientation="horizontal">
 
@@ -26,7 +26,10 @@
             android:text="Product Name"
             android:textColor="#231f1f"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/productQuantity_TV_ID"
@@ -37,7 +40,10 @@
             android:text=""
             android:textColor="#231f1f"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"/>
     </LinearLayout>
 
 </LinearLayout>

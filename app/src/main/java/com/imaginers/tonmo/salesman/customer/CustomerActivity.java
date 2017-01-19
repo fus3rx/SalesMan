@@ -43,8 +43,6 @@ public class CustomerActivity extends AppCompatActivity implements AdapterView.O
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-//        holding the clicked row data of the list
-//        TextView holder = (TextView) view;
 
         ArrayList<CustomerDetails> customerDetails = new ArrayList<>();
         customerDetails.add(new CustomerDetails(R.drawable.customer1, mCustomers[0], "01711934", "3S Shopping Mall", "House # 2, Road # 9, Sector # 1,Uttara", "A12"));

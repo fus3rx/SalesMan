@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#68EFAD"
+    tools:context="com.imaginers.tonmo.salesman.products.ProductDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/back">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/productIMG"
+            android:src="@android:drawable/ic_dialog_map"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productName"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="prudctNam"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:background="@color/back">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter customer name"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:id="@+id/custDetailsET"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter product quantity"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:id="@+id/amountET"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="payment"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:id="@+id/paymentET"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+        <Button
+            android:id="@+id/sellIT"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Sell"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:textSize="22dp"
+            android:onClick="sellProClick"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

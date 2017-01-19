@@ -1,14 +1,20 @@
 package com.imaginers.tonmo.salesman.products;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.imaginers.tonmo.salesman.R;
 
 import java.util.ArrayList;
 
-public class ProductsActivity extends AppCompatActivity {
+public class ProductsActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+    ArrayList<ProductInformation> productInformations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +35,18 @@ public class ProductsActivity extends AppCompatActivity {
 
         ListView productListView = (ListView) findViewById(R.id.listView_ID);
         productListView.setAdapter(adapter);
+        productListView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        productInformations = new ArrayList<>();
+        Intent toProductDetails = new Intent(ProductsActivity.this, ProductDetailsActivity.class);
+        toProductDetails.putExtra("testt", productInformations);
+        toProductDetails.putExtra("poss", position);
+
+        this.startActivity(toProductDetails);
+        Toast.makeText(this,"clicked "+position,Toast.LENGTH_SHORT).show();
+
     }
 }
