@@ -1,4 +1,4 @@
-package com.imaginers.tonmo.salesman;
+package com.imaginers.tonmo.salesman.login;
 
 
 import android.content.Intent;
@@ -7,7 +7,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.imaginers.tonmo.salesman.R;
 import com.imaginers.tonmo.salesman.customer.CustomerActivity;
+import com.imaginers.tonmo.salesman.login.MainActivity;
 import com.imaginers.tonmo.salesman.products.ProductsActivity;
 import com.imaginers.tonmo.salesman.sales.SalesActivity;
 import com.imaginers.tonmo.salesman.statistics.StatisticsActivity;

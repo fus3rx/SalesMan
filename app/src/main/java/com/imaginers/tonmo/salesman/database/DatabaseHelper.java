@@ -1,4 +1,4 @@
-package com.imaginers.tonmo.salesman;
+package com.imaginers.tonmo.salesman.database;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#68EFAD"
     android:orientation="vertical"
-    tools:context="com.imaginers.tonmo.salesman.SignupActivity">
+    tools:context="com.imaginers.tonmo.salesman.login.SignupActivity">
 
     <TextView
         android:layout_width="match_parent"

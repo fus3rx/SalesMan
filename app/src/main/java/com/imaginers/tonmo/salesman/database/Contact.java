@@ -1,4 +1,4 @@
-package com.imaginers.tonmo.salesman;
+package com.imaginers.tonmo.salesman.database;
 
 /**
  * Created by tonmo on 16-10-2016.

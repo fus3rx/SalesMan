@@ -9,36 +9,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.imaginers.tonmo.salesman.HomeActivity">
+    tools:context="com.imaginers.tonmo.salesman.login.HomeActivity">
 
-    <LinearLayout
-        android:id="@+id/secondPart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/firstPart"
-        android:orientation="horizontal"
-        android:weightSum="2">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/secondPart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/firstPart"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
 
-        <Button
-            android:id="@+id/statBTN"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:onClick="statClick"
-            android:text="Statistics" />
+        <!--<Button-->
+            <!--android:id="@+id/statBTN"-->
+            <!--style="@style/Widget.AppCompat.Button.Colored"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="statClick"-->
+            <!--android:text="Statistics" />-->
 
-        <Button
-            android:id="@+id/salesBTN"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_below="@+id/textView"
-            android:layout_weight="1"
-            android:onClick="salesClick"
-            android:text="Sales" />
+        <!--<Button-->
+            <!--android:id="@+id/salesBTN"-->
+            <!--style="@style/Widget.AppCompat.Button.Colored"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_below="@+id/textView"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="salesClick"-->
+            <!--android:text="Sales" />-->
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 
     <Button
@@ -60,7 +60,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="Welcome"
         android:textAllCaps="true"
@@ -71,32 +71,34 @@
     <LinearLayout
         android:id="@+id/firstPart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="53dp"
-        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
         android:weightSum="2">
 
         <Button
             android:id="@+id/wareBTN"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_weight="1"
-            android:text="Sell"
+            android:text="Products"
+            android:textSize="35sp"
             android:onClick="sellClick" />
 
         <Button
             android:id="@+id/customerBTN"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_below="@+id/wareBTN"
             android:layout_weight="1"
+            android:textSize="35sp"
             android:onClick="customerClick"
             android:text="Customers" />
 
